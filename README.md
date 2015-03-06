@@ -1,5 +1,5 @@
 # SWIM (WIP)
-A go implementation of the SWIM protocol
+A go implementation of the [SWIM](http://www.cs.cornell.edu/~asdas/research/dsn02-swim.pdf) protocol
 
 ###TODO
 - Make each server knows each other
