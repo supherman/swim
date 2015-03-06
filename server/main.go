@@ -28,6 +28,7 @@ func main() {
 		}
 
 		if n > 0 {
+
 			log.Printf("Message received from %s: %s", addr.String(), string(buffer[0:n]))
 		}
 	}
