@@ -1,4 +1,4 @@
-# swim (WIP)
+# SWIM (WIP)
 A go implementation of the SWIM protocol
 
 ###TODO
