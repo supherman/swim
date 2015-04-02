@@ -2,16 +2,17 @@ package main
 
 import (
 	"flag"
+	"time"
 
-	"github.com/supherman/swim/server"
+	"github.com/supherman/swim/swim"
 )
 
 var port = flag.String("port", "", "3000")
-var peer = flag.String("peer", "", "4000")
+var initial = flag.String("initial-peer", "", "4000")
 
 func main() {
 	flag.Parse()
-	server, err := server.New(*port, *peer)
+	server, err := swim.NewServer(*port, *initial, 10*time.Second)
 	if err != nil {
 		panic(err)
 	}
